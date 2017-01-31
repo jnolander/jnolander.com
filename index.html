@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Jonas Nolander - Web developer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		<link rel="stylesheet" href="styles/css_reset.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<!--[if IE]>
+			<script src="scripts/matchMedia/matchMedia.js"></script>
+			<script src="scripts/dom4/src/dom4.js"></script>
+			<script src="scripts/html5shiv/src/html5shiv.js"></script>
+		<![endif]-->
+			<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<noscript>
+			<p>No Javascript?</p>
+			<p>Please activate Javascript in order to access the site.</p>
+		</noscript>
+		<span id="triangle"></span>
+		<button id="nav-bar-btn">
+			<span class="burger-line top-burger-line"></span>
+			<span class="burger-line middle-burger-line"></span>
+			<span class="burger-line bottom-burger-line"></span>
+		</button>
+		<div id="nav-bar">
+			<nav id="nav-content">
+				<h2>Jonas Nolander</h2>
+				<ul>
+					<li><button id="home-btn" class="nav-btn active-nav-btn">Home</button></li>
+					<li><button id="about-btn" class="nav-btn">About</button></li>
+					<li><button id="portfolio-btn" class="nav-btn">Portfolio</button></li>
+					<li><button id="contact-btn" class="nav-btn">Contact</button></li>
+					<li><button id="other-btn" class="nav-btn">Other</button></li>
+				</ul>
+			</nav>
+		</div>
+		<main>
+		<div id="content-wrapper" class="fade-in">
+			<section id="home-section" class="section active-section">
+				<span id="start-wrapper">
+					<h1>Press Start</h1>
+					<p>(There is also a menu...)</p>
+				</span>
+			</section>
+			<section id="about-section" class="section">
+				<h2>About</h2>
+				<span class="corner-triangle"></span>
+				<img id="portrait" src="img/portrait.png"></img> <!-- will be an img -->
+				<span class="about-text">
+					<p>How good of you to stop by! I am a web developer, currently living and moisturizing in Berlin. (Wait! ...That escalated quickly! Note to self: "Remove first sentence before it goes online!").</p>
+					<p>Oh, look! It seems like I did not remove the first sentence after all! Oh well, what a bummer! I guess there are no way for me to change that now... I see, you are more interested in knowing about me, rather than reading random things that I simply cannot resist to type down for my own amusement?</p>
+					<p>Back to the topic: I am a web developer - self-taught and highly motivated to develop not only web applications and web sites, but also myself. I come from a professional background as a librarian as well as a technical support agent. But ever since I discovered my affinity towards web tech, I haven't looked back.<p>
+					<p>I have working knowledge and experience in JavaScript, PHP, and MySQL. But my knowledge is constantly increasing! Some of the projects I have been involved in are static web sites, web applications, and Wordpress theme building, as well as some small personal projects. Feel free to have a look at my <span id="portfolio-link" class="link">portfolio page</span> for more details about that! - Or download my <a href="cv/jonas-nolander-cv-en.pdf" target="_blank">CV</a>!</p>
+					<p>I am happily devoting most of my time to programming, but I also play music and is a devoted retro video games collector (hence the font, just in case you are wondering!).</p>
+					<p>You can of course <span id="contact-link" class="link">hire me!</span></p>
+				</span>
+			</section>
+			<section id="portfolio-section" class="section">
+				<h2>Portfolio</h2>
+				<span id="portfolio-items-wrapper">
+					<span id="portfolio-btn-wrapper">
+						<button class="portfolio-content-btn" id="ttpd-btn">
+							<span class="portfolio-content-btn-triangle"></span>
+							<img src="img/portfolio/ttpd-logo.png"></img>
+						</button>
+						<button class="portfolio-content-btn" id="pp-btn">
+							<span class="portfolio-content-btn-triangle"></span>
+							<img src="img/portfolio/pp-logo.png"></img>
+						</button>
+						<button class="portfolio-content-btn" id="mimmo-btn">
+							<span class="portfolio-content-btn-triangle"></span>
+							<img src="img/portfolio/mimmo-logo.png"></img>
+						</button>
+						<button class="portfolio-content-btn" id="mushroom-btn">
+							<span class="portfolio-content-btn-triangle"></span>
+							<img src="img/portfolio/hbbz-logo.png"></img>
+						</button>
+					</span>
+				</span>
+				<span id="portfolio-selected-wrapper">
+					<div class="portfolio-item-content" id="ttpd-item">
+						<button class="portfolio-back-btn">Back</button>
+						<span class="portfolio-item-description-wrapper">
+							<p><strong>Project: </strong>To the Point Design</p>
+							<p><strong>Tech used: </strong>HTML5, CSS3, vanilla JavaScript, PHP</p>
+							<p><strong>Notes: </strong>Co-designed with Yoran Heij.</p>
+							<p><strong>Website: </strong><a target="_blank" href="http://www.tothepointdesign.eu">www.tothepointdesign.eu</a></p>
+						</span>
+						<h4>Screenshots:</h4>
+						<span class="portfolio-item-img-wrapper">
+							<img class="portfolio-mobile-img" src="img/portfolio/ttpd-mobile.png"></img>
+							<img class="portfolio-tablet-img" src="img/portfolio/ttpd-tablet.png"></img>
+							<img class="portfolio-desktop-img" src="img/portfolio/ttpd-desktop.png"></img>
+						</span>
+					</div>
+					<div class="portfolio-item-content" id="pp-item">
+						<button class="portfolio-back-btn">Back</button>
+						<span class="portfolio-item-description-wrapper">
+							<p><strong>Project: </strong>Proper Proportions - Official Band page</p>
+							<p><strong>Tech used: </strong>HTML5, CSS3, vanilla JavaScript, PHP</p>
+							<p><strong>Notes: </strong>Not officially launched, published under agreement. Might have issues on older browsers.</p>
+							<p><strong>Website: </strong><a target="_blank" href="http://www.jnolander.com/pp">www.jnolander.com/pp</a></p>
+						</span>
+						<h4>Screenshots:</h4>
+						<span class="portfolio-item-img-wrapper">
+							<img class="portfolio-mobile-img" src="img/portfolio/pp-mobile.png"></img>
+							<img class="portfolio-tablet-img" src="img/portfolio/pp-tablet.png"></img>
+							<img class="portfolio-desktop-img" src="img/portfolio/pp-desktop.png"></img>
+						</span>
+					</div>
+					<div class="portfolio-item-content" id="mimmo-item">
+						<button class="portfolio-back-btn">Back</button>
+						<span class="portfolio-item-description-wrapper">
+							<p><strong>Project: </strong>Mimmo Catania</p>
+							<p><strong>Tech used: </strong>HTML5, CSS3, vanilla JavaScript</p>
+							<p><strong>Notes: </strong>Co-designed with Yoran Heij.</p>
+							<p><strong>Website: </strong><a target="_blank" href="http://www.mimmocatania.com">www.mimmocatania.com</a></p>
+						</span>
+						<h4>Screenshots:</h4>
+						<span class="portfolio-item-img-wrapper">
+							<img class="portfolio-mobile-img" src="img/portfolio/mimmo-mobile.png"></img>
+							<img class="portfolio-tablet-img" src="img/portfolio/mimmo-tablet.png"></img>
+							<img class="portfolio-desktop-img" src="img/portfolio/mimmo-desktop.png"></img>
+						</span>
+					</div>
+					<div class="portfolio-item-content" id="mushroom-item">
+						<button class="portfolio-back-btn">Back</button>
+						<span class="portfolio-item-description-wrapper">
+							<p><strong>Project: </strong>Hardeman - Beveiliging en BedrijfsZorg</p>
+							<p><strong>Tech used: </strong>HTML5, CSS3, vanilla JavaScript, PHP</p>
+							<p><strong>Notes: </strong>Co-designed with Yoran heij. Main responsibility was a back-end ticket system</p>
+							<p><strong>Website: </strong><a target="_blank" href="http://www.hbbz.nl">www.hbbz.nl</a></p>
+						</span>
+						<h4>Screenshots:</h4>
+						<span class="portfolio-item-img-wrapper">
+							<img class="portfolio-mobile-img" src="img/portfolio/hbbz-mobile.png"></img>
+							<img class="portfolio-tablet-img" src="img/portfolio/hbbz-tablet.png"></img>
+							<img class="portfolio-desktop-img" src="img/portfolio/hbbz-desktop.png"></img>
+						</span>
+					</div>
+				</span>
+			</section>
+			<section id="contact-section" class="section">
+				<h2>Contact</h2>
+				<span class="corner-triangle"></span>
+				<div id="contact-details-wrapper">
+					<span class="contact-title">Phone:</span>
+					<p>(+49) (0)1573 2435 444</p>
+					<span class="contact-title">Email:</span>
+					<p>jonas.nolander@gmail.com</p>
+				</div>
+				<div id="contact-form-wrapper">
+					<form action="" method="GET">
+						<span class="form-error" id="name-error"></span>
+						<input id="form-name" type="text" placeholder="Name"/>
+						<span class="form-error" id="email-error"></span>
+						<input id="form-email" type="email" placeholder="Email"/>
+						<span class="form-error" id="message-error"></span>
+						<textarea id="form-message" placeholder="Message"></textarea>
+					</form>
+					<button id="form-submit-btn">Send</button>
+				</div>
+			</section>
+			<section id="other-section" class="section">
+				<h2>Other</h2>
+				<span class="corner-triangle"></span>
+				<p>Here is a collection of links and other resources.</p>
+				<h3>Sources</h3>
+				<a href="http://github.com/jnolander" target="_blank">Github</a>
+				<p>Currenty a bit empty... But I am working on it!</p>
+				<a href="cv/jonas-nolander-cv-en.pdf" target="_blank">My CV</a>
+				<p>Availible as pdf. If any other format/language is wished for, please let me know!</p>
+				<h3>Recommended links</h3>
+				<a href="http://www.tothepointdesign.eu" target="_blank">To The Point Design</a>
+				<p>Web design company run by good friend Yoran Heij</p>
+				<h3>You can also find me on:</h3>
+				<p><a href="http://facebook.com/jonas.nolander" target="_blank">Facebook</a></p>
+				<p><a href="http://twitter.com/jonasnolander" target="_blank">Twitter</a></p>
+			</section>
+		</div>
+		<button id="next-page-btn" class="fade-in">Start</button>
+		</main>
+		</span>
+	</body>
+</html>
